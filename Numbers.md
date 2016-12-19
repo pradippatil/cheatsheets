@@ -19,3 +19,16 @@ Decimal|Binary|Hexadecimal|Octal
 13|1101 |D|-
 14|1110 |E|-
 15|1111 |F|-
+
+### Internal Numeric representations
+In general, with an n-bit string you can represent up to 2n different values
+
+
+Bit string| Size in Bits|Number of Possible Combinations (2^n)
+:----------|:------------------------------|:-------------------------
+nibble|4| 16
+byte|8| 256
+word|16| 65,536
+double word|32|4,294,967,296
+quad word|64|18,446,744,073,709,551,616
+long word|128|340,282,366,920,938,463,463,374,607,431,768,211,456
