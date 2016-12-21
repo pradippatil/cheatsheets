@@ -64,5 +64,6 @@ http://stackoverflow.com/a/3154503/3781709
 >LCM using GCD is fast and easy to code. One small but important detail: in order to avoid overflows, calculate the final result like this: lcm = a / gcd * b instead of lcm = a * b / gcd
 
 
+
 ### Finding GCD / LCM of multiple Numbers
 GCD and LCMD is associative, GCD(a,b,c,d) is the same as GCD(GCD(GCD(a,b),c),d)
