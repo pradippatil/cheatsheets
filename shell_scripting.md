@@ -105,9 +105,7 @@ By using uptime command in UNIX
 
 ---
 ##### You have an IP address in your network how will you find hostname and vice versa?
-This is a standard UNIX command interview question asked by everybody and I guess everybody knows its answer
-as well. By using nslookup command in UNIX, you can read more about Convert IP Address to hostname in
-Unix here 
+This is a standard UNIX command interview question asked by everybody and I guess everybody knows its answer as well. By using nslookup command in UNIX, you can read more about Convert IP Address to hostname in Unix here 
 
 ---
 ##### Read 2 files in parallel
@@ -117,6 +115,8 @@ Unix here
 
 ---
 ##### How to connnect to db?
+We can use isql utility that comes with open client driver as follows:
+isql –S serverName –U username –P password
 
 ---
 ##### How will you find the 99th line of a file using only tail and head command?
@@ -130,3 +130,25 @@ head and pipe with tail will be slow for a huge file. I would suggest sed like t
 ---
 ##### What is the difference between $$ and $!?
 $$ gives the process id of the currently executing process whereas $! shows the process id of the process that recently went into background.
+
+---
+##### What are zombie processes?
+These are the processes which have died but whose exit status is still not picked by the parent process. These processes even if not functional still have its process id entry in the process
+
+---
+##### I have 2 files and I want to print the records which are common to both.
+We can use “comm” command as follows:
+comm -12 file1 file2 ... 12 will suppress the content which are unique to 1st and 2nd file respectively.
+
+---
+#####  How will I insert a line “ABCDEF” at every 100th line of a file?
+sed ‘100i\ABCDEF’ file1
+
+---
+##### 
+
+---
+##### 
+
+---
+##### 
