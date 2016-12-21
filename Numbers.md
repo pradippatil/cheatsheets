@@ -32,3 +32,35 @@ word|16| 65,536
 double word|32|4,294,967,296
 quad word|64|18,446,744,073,709,551,616
 long word|128|340,282,366,920,938,463,463,374,607,431,768,211,456
+
+---
+### GCM (Greatest Common Divisor)
+Using Euclidean algorithm: https://en.wikipedia.org/wiki/Euclidean_algorithm
+
+_Implementations_:
+
+    function gcd(a, b)
+        while b ≠ 0
+        t := b; 
+        b := a mod b; 
+        a := t; 
+        return a;
+    
+or Using recursion
+
+    function gcd(a, b)
+        if b = 0
+        return a; 
+        else
+        return gcd(b, a mod b);
+
+
+### LCM (Least Common Multiple)
+
+The least common multiple of a and b is the product divided by the greatest common divisor. I.e. lcm(a, b) = ab/gcd(a, b). So the question becomes how to find the gcd. The Euclidean algorithm mentioned above is generally how the gcd is computed. 
+http://stackoverflow.com/a/3154503/3781709
+
+*Important comment*:
+>LCM using GCD is fast and easy to code. One small but important detail: in order to avoid overflows, calculate the final result like this: lcm = a / gcd * b instead of lcm = a * b / gcd
+
+
