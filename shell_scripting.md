@@ -40,12 +40,28 @@ No direct flag. Check count of files/dirs it contains.
 `awk -F, '{print $NF}`
 
 ---
+##### How do you read keyboard input in shell scripts?
+read $input
+
+---
+##### Explain about Stdin, Stdout and Stderr?
+
+---
 ##### Send STDOUT and STDERR to same file
 `command > file 2>&1`
 
 ---
 ##### Debug flag?
 `set -x`
+
+---
+##### How do you test for file properties in shell scripts?
+-s filename tells you if the file is not empty  
+-f filename tells you whether the argument is a file, and not a directory  
+-d filename tests if the argument is a directory, and not a file  
+-w filename tests for writeability  
+-r filename tests for readability  
+-x filename tests for executability
 
 ---
 ##### What are links and symbolic links in UNIX file system?
@@ -145,10 +161,15 @@ comm -12 file1 file2 ... 12 will suppress the content which are unique to 1st an
 sed ‘100i\ABCDEF’ file1
 
 ---
-##### 
+##### How Connect to a Database in Shell Programming?
 
 ---
-##### 
+##### How to run multiple processes in parallel and check exit code of all those processes?
 
 ---
-##### 
+##### What are the disadvantages of shell scripting?
+
+---
+#### How will you list only the empty lines in a file (using grep)?
+grep "^[ ]*$" filename.txt
+
